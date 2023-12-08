@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "flyte-fsspec-error"
+version = "0.1.0"
+authors = ["Gee, <XXX@email.com>"]
+description = "Showcase flyte error."
+readme = "README.md"
+
+packages = [{ include = "flyte_fsspec_error", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+flytekit = "^1.5.0"
+flytekitplugins-deck-standard = "^1.10.0"
+fsspec = ">=2023.3.0,<=2023.9.2"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
