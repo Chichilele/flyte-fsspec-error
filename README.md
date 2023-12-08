@@ -1,7 +1,7 @@
 # flyte-fsspec-error
 
 
-Showcases flyte error where depending on the fsspec version, a workflow run will either fail locally or on the flyte platform.
+Showcases flyte error where depending on the `fsspec` version, a workflow run will either fail locally or on the flyte platform.
 
 Related threads on flyte's community slack:
 - https://flyte-org.slack.com/archives/CP2HDHKE1/p1698215524025349?thread_ts=1698044484.843609&cid=CP2HDHKE1
@@ -10,6 +10,8 @@ Related threads on flyte's community slack:
 ## Setup
 
 This repo is setup with poetry. I've exported the `requirements.txt` file for convenience. There are some helpers in the `Makefile` to build the docker image and push it to your repo.
+
+The current workaround I use is commented in the dockerfile [here](./Dockerfile#L28).
 
 ## Steps to reproduce
 
